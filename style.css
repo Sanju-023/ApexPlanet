@@ -1,0 +1,154 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+}
+
+
+.marquee {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee p {
+  animation: scroll-left 15s linear infinite;
+  font-size: 16px;
+  color: #fff;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 121, 107, 0.9);
+  padding: 15px 30px;
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffeb3b;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+
+.card {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.brand {
+  transition: all 0.3s ease;
+}
+
+.brand:hover {
+  color: #b4e922;
+  text-shadow: 0 0 10px #7ae43c, 0 0 15px #58e42d;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+.card h2:hover {
+  color: #95cf4a;
+  text-shadow: 0 0 10px #ffcc00, 0 0 15px #ffcc00;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 15px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #26a69a;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+/* To-Do List */
+#taskList {
+  margin-top: 20px;
+}
+
+#taskList li {
+  background-color: #b2dfdb;
+  color: #000;
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#taskList button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
