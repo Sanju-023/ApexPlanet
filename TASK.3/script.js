@@ -37,7 +37,7 @@ function getWeather() {
   const city = document.getElementById("cityInput").value.trim();
   console.log("City entered:", city);
 
-  const apiKey = "API ";
+  const apiKey = "e19fadd0b28f3badb3921d4763552";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   //const url = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={e19fadd0b28f3badb3921d476355235a}`;
