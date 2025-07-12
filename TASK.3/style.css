@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 20px;
+}
+
+.navbar {
+  background: teal;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.navbar .brand:hover {
+  color: #00bfff;
+  text-shadow: 0 0 10px #00bfff;
+  transform: scale(1.05);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #00bfff;
+}
+
+.section {
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.carousel img {
+  width: 500px;
+  height: 300px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00b894;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0097a7;
+}
+
+#joke {
+  margin-top: 20px;
+  font-style: italic;
+  color: #ffeaa7;
+  font-size: 1.2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .carousel img {
+    width: 90%;
+    height: auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+.weather-info {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #dfe6e9;
+}
+
+input#cityInput {
+  padding: 10px;
+  width: 60%;
+  max-width: 300px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+/* About Section Styling */
+#about {
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid #00bfff;
+  border-radius: 8px;
+  text-align: justify;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
