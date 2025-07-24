@@ -1,0 +1,124 @@
+  /* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset and basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #95bae4;
+  color: #333;
+
+
+  height: auto;
+  overflow-x: hidden; 
+}
+
+/* Navbar */
+nav {
+  background-color: #a252ee;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-list li a:hover,
+.nav-list li a.active {
+  color: yellow;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #818ed4;
+  color: white;
+}
+
+/* Common sections */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Project link */
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.project-link:hover {
+  background: #2125df;
+}
+
+.contact-section {
+  background-color:  #95bae4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+#contact-form button {
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #1d4ccf;
+}
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
